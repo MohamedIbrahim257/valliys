@@ -48,20 +48,20 @@ a {
 
 .white-btn {
     background-color: #fff;
-    color: #fa2851;
-    border: 1px solid #fa2851;
+    color: #f98575;
+    border: 1px solid #f98575;
 }
 
 .white-btn:hover {
-    background-color: #fa2851;
+    background-color: #f98575;
     color: #fff;
-    border: 1px solid #fa2851;
+    border: 1px solid #f98575;
 }
 
 .pink-btn {
-    background-color: #fa2851;
+    background-color: #f98575;
     color: #fff;
-    border: 1px solid #fa2851;
+    border: 1px solid #f98575;
 }
 
 .pink-btn:hover {
@@ -71,9 +71,9 @@ a {
 }
 
 .yellow-btn {
-    background-color: #ffc107;
+    background-color: #5d3b75;
     color: #fff;
-    border: 1px solid #ffc107;
+    border: 1px solid #5d3b75;
 }
 
 .yellow-btn:hover {
@@ -91,7 +91,7 @@ a {
 }
 
 .text-yellow {
-    color: #ffc107;
+    color: #5d3b75;
 }
 
 .text-black {
@@ -138,7 +138,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ffc107;
+    background-color: #5d3b75;
     border-right: 25px;
 }
 
@@ -227,7 +227,7 @@ a {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    border-top: 11.1px solid #fa2851;
+    border-top: 11.1px solid #f98575;
     border-left: 11.1px solid rgba(255, 255, 255, 0.5);
     border-right: 11.1px solid rgba(255, 255, 255, 0.5);
     border-bottom: 11.1px solid rgba(255, 255, 255, 0.5);
@@ -256,17 +256,17 @@ a {
 .navbar-nav .nav-link {
     padding: 10px 0 2px 0 !important;
     position: relative;
-    overflow: hidden;
+    white-space: nowrap;
     display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .btn-slider {
     padding: 10px 25px;
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     font-weight: 400;
     -webkit-transition: 0.5s ease;
@@ -277,7 +277,7 @@ a {
 .btn-main {
     padding: 10px 35px;
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     font-weight: 400;
     -webkit-transition: 0.5s ease;
@@ -412,7 +412,7 @@ a {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-    color: #ffc107;
+    color: #5d3b75;
 }
 
 /* ===================================
@@ -653,7 +653,7 @@ a {
     line-height: normal;
     position: relative;
     border-radius: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-weight: 500;
 }
 
@@ -714,7 +714,7 @@ svg {
     right: 0;
     /*left: 0;*/
     height: 152%;
-    fill: #ffc107;
+    fill: #5d3b75;
     /*height: 100%;*/
     top: -147px;
     bottom: 0;
@@ -814,9 +814,9 @@ svg.right-square {
     line-height: 1.3;
 }
 
-.card .card-body {
+/* .card .card-body {
     padding: 0 70px 30px 70px;
-}
+} */
 
 .card {
     border: none;
@@ -829,7 +829,7 @@ svg.right-square {
 }
 
 .card:hover {
-    background-color: #ffc107;
+    background-color: #fceeee;
 }
 
 .card:hover .feature-icon {
@@ -840,7 +840,7 @@ svg.right-square {
 }
 
 .small-heading {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     font-weight: normal;
 }
@@ -852,14 +852,14 @@ svg.right-square {
 }
 
 .main-heading {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 48px;
     font-weight: bold;
     letter-spacing: 0;
 }
 
 .heading {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 48px;
     font-weight: 300;
 }
@@ -907,7 +907,7 @@ svg.right-square {
 
 .stats-icon i {
     font-size: 36px;
-    color: #ffc107;
+    color: #5d3b75;
 }
 
 .stats-box-text .numbering {
@@ -967,7 +967,7 @@ svg.right-square.team {
 
 .team-owl .owl-nav button.owl-next:hover,
 .team-owl .owl-nav button.owl-prev:hover {
-    color: #fa2851;
+    color: #f98575;
 }
 
 .team-owl .owl-prev span {
@@ -999,7 +999,7 @@ svg.right-square.team {
     top: 8px;
     left: 26%;
     font-size: 24px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     color: #fff;
 }
 
@@ -1202,7 +1202,7 @@ svg.right-square.team {
 }
 
 .item .quotes i {
-    color: #ffc107;
+    color: #5d3b75;
     font-size: 23px;
 }
 
@@ -1283,7 +1283,7 @@ svg.right-square.team {
 
 .info-blog h4 {
     font-size: 24px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .blog-description .sub-heading {
@@ -1341,7 +1341,7 @@ svg.blog {
 }
 
 .contact-list li {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-weight: 400;
     list-style: none;
     margin-bottom: 5px;
@@ -1401,7 +1401,7 @@ ul.contact-list a:hover {
 }
 
 .address-icon {
-    color: #ffc107;
+    color: #5d3b75;
     font-size: 25px;
 }
 
@@ -1471,7 +1471,7 @@ li.footer_list .twt:hover {
 
 li.footer_list .gogle:hover {
     color: #fff;
-    background-color: #ffc107;
+    background-color: #5d3b75;
 }
 
 li.footer_list .inst:hover {
@@ -1523,7 +1523,7 @@ li.footer_list .gmail:hover {
 .blog_detail-heading {
     color: #202020;
     font-size: 26px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .text_minimal ul {
@@ -1548,7 +1548,7 @@ li.footer_list .gmail:hover {
 }
 
 .quote_text .quote {
-    color: #ffc107;
+    color: #5d3b75;
     font-size: 24px;
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
@@ -1561,7 +1561,7 @@ li.footer_list .gmail:hover {
     margin-top: 50px;
     text-align: left;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .quote_text {
@@ -1571,7 +1571,7 @@ li.footer_list .gmail:hover {
 .verticle_lineQ {
     width: 2.3px;
     height: 75px;
-    background-color: #ffc107;
+    background-color: #5d3b75;
     text-align: right;
     margin-top: -87px;
     margin-left: 38.7rem;
@@ -1610,14 +1610,14 @@ li.footer_list .gmail:hover {
 .main_written {
     color: #202020;
     font-size: 24px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .comment_text {
     color: #202020;
     font-size: 24px;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .user_icon {
@@ -1701,7 +1701,7 @@ li.footer_list .gmail:hover {
 }
 
 .form-control {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     border-color: #ced4da;
     color: rgb(135, 153, 163);
 }
@@ -1751,7 +1751,7 @@ li.footer_list .gmail:hover {
     padding-left: 42px;
     padding-top: 30px;
     padding-bottom: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .topic_outerbox ul {
@@ -1766,7 +1766,7 @@ li.footer_list .gmail:hover {
     padding-bottom: 7px;
     font-weight: 500;
     overflow: hidden !important;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .topic_outerbox li a {
@@ -1776,7 +1776,7 @@ li.footer_list .gmail:hover {
 }
 
 .topic_outerbox li a:hover {
-    color: #ffc107;
+    color: #5d3b75;
 }
 
 .dots {
@@ -1817,7 +1817,7 @@ li.footer_list .gmail:hover {
     padding-left: 42px;
     padding-top: 30px;
     padding-bottom: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .pt-lg-4 {
@@ -1851,14 +1851,14 @@ li.footer_list .gmail:hover {
     transition: .2s ease;
     line-height: 18px;
     letter-spacing: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .date {
     color: gray;
     font-size: 14px;
     margin-bottom: 4px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .text_post span {
@@ -1874,11 +1874,11 @@ li.footer_list .gmail:hover {
 }
 
 .main:hover {
-    color: #ffc107;
+    color: #5d3b75;
 }
 
 .text_post span:hover {
-    color: #ffc107;
+    color: #5d3b75;
 }
 
 /*..............TAGS.................*/
@@ -1896,7 +1896,7 @@ li.footer_list .gmail:hover {
     padding-left: 42px;
     padding-top: 30px;
     padding-bottom: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 span {
@@ -1910,7 +1910,7 @@ span {
 
 .tag_text a:hover {
     color: #fff;
-    background-color: #ffc107;
+    background-color: #5d3b75;
     border: solid 1px transparent;
 }
 
@@ -2505,4 +2505,14 @@ span {
     .banner-icons {
         display: none;
     }
+}
+
+body {
+    font-family: 'El Messiri', sans-serif;
+
+}
+
+h1 , h2 , h3 , h4 , h5 ,h6 ,  a , p {
+    font-family: 'El Messiri', sans-serif;
+font-family: 'Tajawal', sans-serif;
 }
