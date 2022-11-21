@@ -66,8 +66,8 @@
         <!--    NAVBAR FOR LARGE SCREEN-->
         <nav id="my-nav1" class="navbar navbar-expand-lg navbar-light rounded-bar transparent-bar">
 
-            <div class="logo small-screen">
-                <a href="#home" class="scroll"><img src="./digital-marketing/img/valliys-08.png" alt="Logo Img"></a>
+            <div class="small-screen logo">
+                <img class="w-100" src="./digital-marketing/img/valliys-08.png" alt="Logo Img">
             </div>
 
             <div class="container bg-trans-color">
@@ -80,7 +80,7 @@
                                             alt="Logo Img"></a>
                                 </div>
                             </div>
-                            <div class="col-6 p-0 sub_nav_flex">
+                            <div class="col-7 p-0 sub_nav_flex">
                                 <ul id="primary" class="navbar-nav text-center ">
 
                                     <li class="nav-item ">
@@ -96,13 +96,13 @@
                                         <a class="nav-link font-weight-bold " href="./about-us.html">من نحن</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="" class=" nav-link font-weight-bold ">الرئيسية</a>
+                                        <a href="/" class=" nav-link font-weight-bold ">الرئيسية</a>
                                     </li>
                                 </ul>
                             </div>
 
 
-                            <div class="col-3 text-right p-0">
+                            <div class="col-3 text-right p-20 ">
                                 <div class="banner-icons">
                                     <a href="https://www.facebook.com/valliysofficial"><i
                                             class="lab la-facebook-f icons fb"></i></a>
@@ -125,16 +125,16 @@
         </nav>
 
         <!--Side Nav-->
-        <div dir="rtl" class="side-menu hidden">
+        <div dir="rtl" class="side-menu hidden ">
             <div class="inner-wrapper">
                 <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
                 <nav class="side-nav w-100">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav text-right">
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#home">الرئيسية</a>
+                            <a class="nav-link scroll" href="/">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#feature">من نحن</a>
+                            <a class="nav-link scroll" href="./about-us.html">من نحن</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#gallery">الاعمال السابقة</a>
@@ -143,18 +143,18 @@
                             <a class="nav-link scroll" href="#testimonial">مقالات</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="btn btn-slider white-btn rounded-pill">اتصل بنا</a>
+                            <a href="./contact-us.html" class="btn btn-slider white-btn rounded-pill">اتصل بنا</a>
                         </li>
                     </ul>
                 </nav>
 
-                <div class="side-footer w-100">
+                <div class="side-footer w-100 text-right">
                     <div class="banner-icons">
                         <a href="https://www.facebook.com/valliysofficial"><i class="lab la-facebook-f icons"></i></a>
                         <a href="https://twitter.com/valliysofficial"><i class="lab la-twitter icons"></i></a>
                         <a href="https://www.instagram.com/valliy.sofficial/"><i class="lab la-instagram icons"></i></a>
                     </div>
-                    <p>&copy; جميع الحقوق محفوظة © 2022 جولدن فاليو.</p>
+                    <p>&copy; جميع الحقوق محفوظة © 2022 ڤاليس.</p>
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@
                         <div class="shadow-home">
                             <img src="digital-marketing/img/shadow.png" alt="img">-->
                 </div>
-            </div> -->
+            </div>
 
         </div>
         </div>
@@ -195,10 +195,10 @@
         <svg class="yellow-square" viewBox="0 0 200 655" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:rgba(235,215,243,255);stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    <stop offset="0%" style="stop-color:rgba(235,215,243,255);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
                 </linearGradient>
-              </defs>
+            </defs>
             <rect x="0" y="32" width="1616" height="1616" rx="28" ry="28" fill="url(#grad1)"
                 transform="rotate(-45 200 70)" />
         </svg>
@@ -842,7 +842,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <form class="contact-form" id="contact-form-data">
+                    <form class="contact-form" id="form" method="POST" >
                         <div class="row mt-5">
                             <div class="col-sm-12" id="result"></div>
                         </div>
@@ -850,32 +850,34 @@
                             <div class="col-12 col-md-5">
                                 <div class="form-group">
                                     <input class="form-control" type="text" placeholder="الاسم الكامل" required
-                                        id="candidate_name" name="userName">
+                                        id="name" name="name">
                                 </div>
 
                                 <div class="form-group">
                                     <input class="form-control" type="email" placeholder="البريد الالكتروني*" required
-                                        id="user_email" name="userEmail">
+                                        id="email" name="email">
                                 </div>
 
                                 <div class="form-group ">
-                                    <input class="form-control" type="phone" placeholder="رقم الهاتف" id="user_subject"
-                                        name="userSubject">
+                                    <input class="form-control" type="phone" placeholder="رقم الهاتف" id="phone"
+                                        name="phone">
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-7">
                                 <div class="form-group ">
                                     <textarea class="form-control" placeholder="اخبرنا عن مشروعك" required rows="7"
-                                        id="user_message" name="userMessage"></textarea>
+                                        id="message" name="message"></textarea>
                                 </div>
                             </div>
                         </div>
 
-                        <button type="button" class="btn btn-slider pink-btn rounded-pill w-100 contact_btn"
+                        <button type="submit" class="btn btn-slider pink-btn rounded-pill w-100 contact_btn"
                             id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i>
                             <b>إرسال الرسالة</b></button>
+                            <h4 id="result" ></h4>
                     </form>
+                  
                 </div>
 
                 <div class="col-12 col-md-5 mt-5">
@@ -908,7 +910,7 @@
             <!--        FOOTER SECTION ROW-->
             <div class="row footer">
                 <div class="col-12 col-md-5">
-                    <ul class="footer_ul mb-50">
+                    <!-- <ul class="footer_ul mb-50">
                         <a href="https://www.facebook.com/valliysofficial">
                             <li class="footer_list"><i class="lab la-facebook-f fb"></i></li>
                         </a>
@@ -926,14 +928,7 @@
                             <li class="footer_list"><i class="lab la-snapchat"></i></li>
                         </a>
 
-                        <a href="https://www.snapchat.com/add/valliysofficial?share_id=NqagYxh_HY8&locale=en-US">
-                            <li class="footer_list"><i class="lab "></i></li>
-                        </a>
-
-
-                    </ul>
-                    <p dir="rtl" class="info footer_text ml-3"><i class="far fa-copyright"></i>جميع الحقوق محفوظة © 2022  فاليس.</p>
-
+                    </ul> -->
                 </div>
             </div>
 
@@ -946,61 +941,77 @@
 
     <section dir="rtl" class="mt-5 text-right">
         <!-- Footer -->
-        <footer class="bg-secondary text-white">
+        <footer style="background-color: #fceeee;" class="">
             <!-- Grid container -->
             <div class="container p-4">
                 <!--Grid row-->
-                <div class="row">
+                <div class="row text-foot">
                     <!--Grid column-->
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Footer Content</h5>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-right">
+                        <div class=" logo-footer">
+                            <img class="w-75" src="./digital-marketing/img/valliys-08.png" alt="">
+                            <p>
+                                شركة ڤاليس هي شركة رائدة في مجال التسويق الرقمي، تقدم لعملائها كافة تقنيات التسويق
+                                الحديثة
+                                وفقاً لاستراتيجيات تسويقية وخطط بيعية مدروسة تساهم في تحقيق أعلى النتائج وبناء علامة
+                                تجارية
+                                قوية للعملاء
+                            </p>
+                        </div>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-                            aliquam voluptatem veniam, est atque cumque eum delectus sint!
-                        </p>
+
+
+
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
+                    <div class="col-lg-3 col-md-6 mt-5  mb-md-0">
 
-                        <ul class="list-unstyled mb-0">
+                        <h5 class="text-uppercase">روابط هامه</h5>
+                        <ul class="list-unstyled mb-0 ">
                             <li>
-                                <a href="#!" class="text-white">Link 1</a>
+                                <a href="/" class="text-foot"> الرئيسية</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 2</a>
+                                <a href="./about-us.html" class="text-foot">من نحن</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 3</a>
+                                <a href="#!" class="text-foot">الأعمال السابقة</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 4</a>
+                                <a href="#!" class="text-foot">مقالات</a>
+                            </li>
+                            <li>
+                                <a href="./contact-us.html" class="text-foot">اتصل بنا</a>
                             </li>
                         </ul>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase mb-0">Links</h5>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-center mt-5  justify-content-center">
+                        <ul class="footer_ul mb-50">
+                            <a href="https://www.facebook.com/valliysofficial">
+                                <li class="footer_list "><i class="lab la-facebook-f fb "></i></li>
+                            </a>
+                            <a href="https://twitter.com/valliysofficial">
+                                <li class="footer_list"><i class="lab la-twitter twt"></i></li>
+                            </a>
+                            <a href="https://www.instagram.com/valliy.sofficial/">
+                                <li class="footer_list"><i class="lab la-instagram inst"></i></li>
+                            </a>
+                            <a href="https://www.linkedin.com/company/valliys-official/">
+                                <li class="footer_list"><i class="lab la-linkedin-in link"></i></li>
+                            </a>
 
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
+                            <a href="https://www.snapchat.com/add/valliysofficial?share_id=NqagYxh_HY8&locale=en-US">
+                                <li class="footer_list"><i class="lab la-snapchat snap"></i></li>
+                            </a>
+                            <a href="https://vm.tiktok.com/ZMNxuDE7H/ ">
+                                <li class="footer_list"><i class="fa-brands fa-tiktok tik"></i></li>
+                            </a>
+
                         </ul>
                     </div>
                     <!--Grid column-->
@@ -1010,20 +1021,52 @@
             <!-- Grid container -->
 
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                <p dir="rtl" class="info footer_text ml-3"><i class="far fa-copyright"></i>جميع الحقوق محفوظة © 2022
-                    فاليس.</p>
+            <div class="text-center p-3 " style="background-color:#5d3b75;">
+                <p dir="rtl" class="info footer_text ml-3 text-white"><i class="far fa-copyright"></i>جميع الحقوق محفوظة
+                    © 2022
+                    ڤاليس.</p>
                 <a class="text-white" href=""></a>
             </div>
             <!-- Copyright -->
         </footer>
         <!-- Footer -->
     </section>
-
-
-
+    <div>
+        <a class="call" ref="valliys-WahtsApp" href="tel:+566831832">
+            <img class="whatsappimage" src="./digital-marketing/img/call.png" alt="valliys call" width="50"
+                height="50" />
+        </a>
+    </div>
+    <div>
+        <a class="whatsappchat" ref="valliys" href='' target='_blank'>
+            <img class="whatsappimage" src="./digital-marketing/img/imageedit_3_4048057641.png" alt="valliys WhatsApp"
+                width="50" height="50" />
+        </a>
+    </div>
 
     <!-- JavaScript -->
+
+    <script>
+        const form = document.getElementById("form");
+        const result = document.getElementById("result");
+        form.addEventListener("submit", formSubmit);
+    
+        function formSubmit(e) {
+            e.preventDefault();
+            const formData = new FormData(event.target);
+    
+            fetch("https://getform.io/f/d9545fd2-a32c-4dc5-8cbc-d8a5f74cac57", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json',
+                },
+            })
+            .then(response => console.log(response))
+            result.innerHTML = "تم الارسال بنجاح"
+            .catch(error => console.log(error))
+        }
+    </script>
     <script src="vendor/js/bundle.min.js"></script>
 
     <!-- Plugin Js -->
