@@ -424,7 +424,9 @@ a {
     position: fixed;
     right: 0;
     top: 0;
-    background: #ffffff;
+    background-image: url(../img/WhatsApp\ Image\ 2022-09-05\ at\ 4.25.07\ PM.jpeg);
+    background-size: cover;
+    background-position: center bottom;
     z-index: 9999;
     height: 100%;
     -webkit-transform: translate3d(100%, 0, 0);
@@ -532,7 +534,21 @@ a {
     margin-right: 1rem;
     position: absolute;
     right: 10px;
-    display: inline-block;
+    display: none;
+}
+
+@media screen and (max-width:992px)  {
+    .sidemenu_btn {
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        width: 40px;
+        padding: 6px;
+        margin-right: 1rem;
+        position: absolute;
+        right: 10px;
+        display: inline-block;
+    }
 }
 
 .sidemenu_btn span {
@@ -2011,6 +2027,8 @@ span {
     }
     .large-logo {
         width: 92%;
+        left: 50%;
+        top: 35%;
     }
     .plant-home {
         position: absolute;
@@ -2645,7 +2663,8 @@ section > h1 {
 }
 .masthead {
   padding: 6em 0;
-  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+  background-image: url('../img/WhatsApp\ Image\ 2022-09-05\ at\ 4.24.58\ PM.jpeg');
+  opacity: 0.5;
   background-size: cover;
   background-repeat: no-repeat;
   /* border-top: solid 1em #FFCF33; */
@@ -2757,5 +2776,9 @@ a {
 
 .call:hover{
 	box-shadow: 0 5px 20px 0 #5c3c7e;
+}
+
+.textPurple{
+    color: #5c3c7e;
 }
 

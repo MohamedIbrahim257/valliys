@@ -12,7 +12,7 @@
     <!-- keywords -->
     <meta name="keywords" content="">
     <!-- Page Title -->
-    <title>Valliys</title>
+    <title>Articles-Valliys</title>
     <!-- Favicon -->
     <link rel="icon" href="./digital-marketing/img/WhatsApp Image 2022-09-05 at 4.24.58 PM.jpeg">
     <!-- Bundle -->
@@ -47,7 +47,20 @@
     <link rel="stylesheet" href="digital-marketing/css/line-awesome.min.css">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./digital-marketing/css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTG8HYXKQK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DTG8HYXKQK');
+    </script>
 </head>
+<header class='masthead'>
+    <p class='masthead-intro'> </p>
+    <h1 class='masthead-heading'></h1>
+</header>
 
 <body>
     <div class="loader-area">
@@ -99,7 +112,7 @@
                             </div>
 
 
-                            <div class="col-3 text-right p-20 ">
+                            <div class="col-3 text-right p-5 ">
                                 <div class="banner-icons">
                                     <a href="https://www.facebook.com/valliysofficial"><i
                                             class="lab la-facebook-f icons fb"></i></a>
@@ -165,72 +178,20 @@
             <div class="row m-0">
                 <div class="col-lg-6 offset-lg-4 col-md-12 offset-md-0 col-sm-12 text-left p-0">
                     <div class="home-text text-black text-right">
-                        <h1 class="main-heading mt-3 mb-4">مقالات <br>Design Blog and News</h1>
+                        <h1 class="main-heading mt-3 mb-4 textPurple">مقالات</h1>
                         <p class="sub-heading mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
                             tempor incididunt ut aliq. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt.</p>
                     </div>
                 </div>
             </div>
-            <div class="row mt-40">
-                <div class="col-lg-8 offset-lg-4 col-md-12 offset-md-0 p-0">
-                    <div class="blog-owl owl-carousel owl-theme no-gutters blog-area" id="blog-carousal">
+           
+            <div class="row mt-40 ">
+                <div class=" col-lg-8 offset-lg-4 col-md-12 offset-md-0 p-0">
+                    <div class="blog-owl owl-carousel owl-theme no-gutters blog-area property-card" id="blog-carousal">
+                    
+                
 
-                        <div class="item blog-item">
-                            <div class="blog-img">
-                                <a href="digital-marketing/standalone.html">
-                                    <img src="digital-marketing/img/valliys-08.png" alt="blog img"></a>
-                            </div>
-
-                            <div class="blog-text text-center text-md-left">
-                                <div class="date mb-2">
-                                    <p class="text-red">May27, 2020</p>
-                                </div>
-                                <div class="info-blog">
-                                    <a href="digital-marketing/standalone.html">
-                                        <h4>Web design is fun</h4>
-                                    </a>
-                                </div>
-                                <div class="blog-description mb-3">
-                                    <p class="sub-heading">Lorem ipsum dolor sit amet, consadipi. Ut enim adipiscing
-                                        elit, sed do tempor.</p>
-                                </div>
-                                <!-- <div class="writer d-flex">
-                                    <div class="writer-img">
-                                        <img src="digital-marketing/img/blog1-writer.jpg" alt="img">
-                                    </div>
-                                    <p class="writer-name font-italic ml-3">David Villas</p>
-                                </div> -->
-                            </div>
-                        </div>
-
-                        <div class="item blog-item">
-                            <div class="blog-img">
-                                <a href="digital-marketing/standalone.html">
-                                    <img src="digital-marketing/img/valliys-08.png" alt="blog img"></a>
-                            </div>
-
-                            <div class="blog-text text-center text-md-left">
-                                <div class="date mb-2">
-                                    <p class="text-red">June14, 2020</p>
-                                </div>
-                                <div class="info-blog">
-                                    <a href="digital-marketing/standalone.html">
-                                        <h4>Future of websites</h4>
-                                    </a>
-                                </div>
-                                <div class="blog-description mb-3">
-                                    <p class="sub-heading">Lorem ipsum dolor sit amet, consadipi. Ut enim adipiscing
-                                        elit, sed do tempor.</p>
-                                </div>
-                                <!-- <div class="writer d-flex">
-                                    <div class="writer-img">
-                                        <img src="digital-marketing/img/blog2-writer.jpg" alt="img">
-                                    </div>
-                                    <p class="writer-name font-italic ml-3">Lisa Jhonson</p>
-                                </div> -->
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -371,6 +332,71 @@
     <script src="digital-marketing/js/tilt.jquery.js"></script>
     <script src="vendor/js/contact_us.js"></script>
     <script src="digital-marketing/js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCO34YMDe_17kdaXk1rmEJMjRV33mL_3Ek",
+            authDomain: "valliys.firebaseapp.com",
+            databaseURL: "https://valliys-default-rtdb.firebaseio.com",
+            projectId: "valliys",
+            storageBucket: "valliys.appspot.com",
+            messagingSenderId: "440689896549",
+            appId: "1:440689896549:web:1c7cb8aeb298633d57ea8c",
+            measurementId: "G-DTG8HYXKQK"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        var messagesRef = firebase.database()
+            .ref('News');
+        console.log(messagesRef);
+        let arr = [];
+
+        messagesRef.once("value", (snapshot) => {
+            snapshot.forEach((element) => {
+                console.log(element.val());
+                arr.push(element.val());
+                console.log(arr);
+            })
+            arr.map(e => {
+                document.querySelector(".property-card").innerHTML += `
+
+                <div class="item blog-item ">
+    <div class="blog-img ">
+        <a onclick="getPage('${e.id}')">
+            <img class="w-50" src="${e.thePhotoNews}" alt="blog img"></a>
+    </div>
+
+    <div class="blog-text text-center text-md-left">
+        <div class="date mb-2">
+            <p class="text-red">May27, 2020</p>
+        </div>
+        <div class="info-blog">
+            <a onclick="getPage('${e.id}')">
+                <h4>${e.nameNews}</h4>
+            </a>
+        </div>
+        <div class="blog-description mb-3">
+            <p class="sub-heading">${e.textBox}</p>
+        </div>
+    </div>
+</div>
+
+	 `
+            })
+
+
+        })
+
+        function getPage(id) {
+            window.location.href = "/news/index.html?id=" + id;
+
+        }
+
+
+
+
+    </script>
+    
 </body>
 
 </html>
