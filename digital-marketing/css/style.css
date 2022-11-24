@@ -744,21 +744,21 @@ svg.left-square {
     bottom: 0;
 }
 
-/*svg.yellow-square {*/
+ /* svg.yellow-square {
 
-/*    position: absolute;*/
+   position: absolute;
 
-/*    !*left: 0;*!*/
+    left: 0;
 
-/*    right: 0;*/
+    right: 0;
 
-/*    height: 200%;*/
+    height: 200%;
 
-/*    top: -83px;*/
+    top: -83px;
 
-/*    bottom: 0;*/
+    bottom: 0;
 
-/*}*/
+ } */
 
 svg.yellow-square {
     position: absolute;
@@ -2589,7 +2589,7 @@ font-family: 'Tajawal', sans-serif;
 
   .text-intro{
     color: #5c3c7e;
-    line-height: 1.7;
+    line-height: 2;
     text-align: center;
     font-size: medium;
     position: relative;
@@ -2782,3 +2782,12 @@ a {
     color: #5c3c7e;
 }
 
+/* .property-card{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    margin-right: -15px;
+    margin-left: -15px;
+} */
