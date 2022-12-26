@@ -14,6 +14,7 @@
     <!-- Page Title -->
     <title>Articles-Valliys</title>
     <!-- Favicon -->
+
     <link rel="icon" href="./digital-marketing/img/WhatsApp Image 2022-09-05 at 4.24.58 PM.jpeg">
     <!-- Bundle -->
     <link rel="stylesheet" href="vendor/css/bundle.min.css">
@@ -49,6 +50,7 @@
     <link rel="stylesheet" href="./digital-marketing/css/style.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTG8HYXKQK"></script>
+    <script src="./digital-marketing/bootstrap-4.0.0-dist/css/bootstrap.css"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -70,10 +72,10 @@
             <div class='three'></div>
         </div>
     </div>
-    <!-- START NAVBAR SECTION -->
+
     <header>
 
-        <!--    NAVBAR FOR LARGE SCREEN-->
+
         <nav id="my-nav1" class="navbar navbar-expand-lg navbar-light rounded-bar transparent-bar">
 
             <div class="small-screen logo">
@@ -81,7 +83,7 @@
             </div>
 
             <div class="container bg-trans-color">
-                <div class="row no-gutters w-100">
+                <div class=" no-gutters w-100">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                         <div class="collapse navbar-collapse">
                             <div class="col-3 col-md-2 col-lg-3 text-right p-0">
@@ -112,7 +114,7 @@
                             </div>
 
 
-                            <div class="col-3 text-right p-5 ">
+                            <div class="col-3 text-right  ">
                                 <div class="banner-icons">
                                     <a href="https://www.facebook.com/valliysofficial"><i
                                             class="lab la-facebook-f icons fb"></i></a>
@@ -134,7 +136,7 @@
             </a>
         </nav>
 
-        <!--Side Nav-->
+
         <div dir="rtl" class="side-menu hidden ">
             <div class="inner-wrapper">
                 <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
@@ -169,35 +171,31 @@
             </div>
         </div>
         <a id="close_side_menu" href="javascript:void(0);"></a>
-        <!-- End side menu -->
+
     </header>
 
 
-    <section id="blog" class="blog">
+    <section dir="rtl" id="blog" class="blog">
         <div class="container">
-            <div class="row m-0">
+            <div class="d-flex m-0">
                 <div class="col-lg-6 offset-lg-4 col-md-12 offset-md-0 col-sm-12 text-left p-0">
                     <div class="home-text text-black text-right">
                         <h1 class="main-heading mt-3 mb-4 textPurple">مقالات</h1>
-                        <p class="sub-heading mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
+                        <!-- <p class="sub-heading mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
                             tempor incididunt ut aliq. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</p>
+                            incididunt.</p> -->
                     </div>
                 </div>
-            </div>
-           
-            <div class="row mt-40  ">
-                <div class=" col-lg-4 offset-lg-4 col-md-12 offset-md-0 p-0">
-                    <div class=" property-card" >
-                    
-                
 
-                    </div>
-                </div>
+            </div>
+
+            <div class="row flex-wrap-reverse">
+
+
             </div>
         </div>
 
-    
+
         <!-- <svg class="right-square small-blog small-view" viewBox="0 0 312 600" xmlns="http://www.w3.org/2000/svg">
             <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75"
                 transform="rotate(-45 310 100)" />
@@ -205,10 +203,9 @@
 
     </section>
 
-    <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75"
-            transform="rotate(135 100 245)" />
-    </svg>
+    <!-- <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75" transform="rotate(135 100 245)" />
+    </svg> -->
 
 
 
@@ -320,6 +317,8 @@
     <script src="vendor/js/bundle.min.js"></script>
 
     <!-- Plugin Js -->
+    <script src="./digital-marketing/slick-1.8.1/slick/slick.js"></script>
+    <script src="./digital-marketing/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
     <script src="vendor/js/owl.carousel.min.js"></script>
     <script src="vendor/js/jquery.cubeportfolio.min.js"></script>
     <script src="vendor/js/parallaxie.min.js"></script>
@@ -334,6 +333,10 @@
     <script src="digital-marketing/js/script.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script>
+     let id = window.location.search;
+        id = parseInt(id.substring(4))
+
+
         var firebaseConfig = {
             apiKey: "AIzaSyCO34YMDe_17kdaXk1rmEJMjRV33mL_3Ek",
             authDomain: "valliys.firebaseapp.com",
@@ -356,20 +359,22 @@
                 console.log(element.val());
                 arr.push(element.val());
                 console.log(arr);
+
             })
             arr.map(e => {
-                document.querySelector(".property-card").innerHTML += `
 
+
+
+                document.querySelector(".row").innerHTML += `
+                <div class=" col-lg-4 col-md-4">
                 <div class="item blog-item ">
-    <div class="blog-img ">
+    <div class="blog-img >
         <a onclick="getPage('${e.id}')">
-            <img class="w-100" src="${e.thePhotoNews}" alt="blog img"></a>
+            <img class="w-100" src="${e.thePhotoNews}" alt="blog "></a>
     </div>
 
-    <div class="blog-text text-center text-md-left">
-        <div class="date mb-2">
-            <p class="text-red">May27, 2020</p>
-        </div>
+    <div class="blog-text text-center ">
+
         <div class="info-blog">
             <a onclick="getPage('${e.id}')">
                 <h4>${e.nameNews}</h4>
@@ -380,23 +385,25 @@
         </div>
     </div>
 </div>
+</div>
 
 	 `
+
             })
 
 
         })
 
         function getPage(id) {
-            window.location.href = "/news/index.html?id=" + id;
+            window.location.href = "articlesDesc.html?id=" + id;
 
         }
 
-
-
-
     </script>
-    
+    <script>
+        
+    </script>
+
 </body>
 
 </html>

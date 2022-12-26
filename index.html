@@ -18,7 +18,10 @@
     <!-- Bundle -->
     <link rel="stylesheet" href="vendor/css/bundle.min.css">
     <!-- Plugin Css -->
+    <link rel="stylesheet" href="./vendor/css/owl.carousel.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./digital-marketing/slick-1.8.1/slick/slick.less">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Tajawal:wght@200;300&display=swap"
@@ -37,10 +40,8 @@
         rel="stylesheet">
 
 
-
-
     <link rel="stylesheet" href="vendor/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+
     <link rel="stylesheet" href="digital-marketing/css/animate.min.css">
     <link rel="stylesheet" href="digital-marketing/css/jquery.fancybox.css">
     <link rel="stylesheet" href="digital-marketing/css/jquery.fancybox.min.css">
@@ -48,14 +49,14 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./digital-marketing/css/style.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTG8HYXKQK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTG8HYXKQK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-DTG8HYXKQK');
-</script>
+        gtag('config', 'G-DTG8HYXKQK');
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="150">
@@ -170,7 +171,7 @@
         <a id="close_side_menu" href="javascript:void(0);"></a>
         <!-- End side menu -->
     </header>
-    
+
 
     <section id="home" class="home">
         <div class="container">
@@ -197,26 +198,28 @@
                             <img src="digital-marketing/img/shadow.png" alt="img">-->
                 </div>
             </div>
-   
-    
+
+
 
         </div>
         </div>
         </div>
-        <svg  class="yellow-square" viewBox="0 0 200 655" xmlns="http://www.w3.org/2000/svg">
-            <defs >
-                <pattern  id="img1" patternUnits="userSpaceOnUse" width="100" height="100">
-                    <image  href="./digital-marketing/img/WhatsApp Image 2022-09-05 at 4.24.58 PM.jpeg" x="0" y="0"  />
-                  </pattern>
-            </defs>
-            <rect x="" y="25" width="1616" height="1616" rx="28" ry="28" fill="url(#img1)"
+        <svg class="yellow-square" viewBox="0 0 200 655" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgba(235,215,243,255);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            <rect x="0" y="32" width="1616" height="1616" rx="28" ry="28" fill="url(#grad1)"
                 transform="rotate(-45 200 70)" />
         </svg>
- 
+
         <svg class="left-square small-view" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
             <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#fceeee"
                 transform="rotate(135 100 245)" />
         </svg>
+
 
     </section>
 
@@ -421,7 +424,7 @@
                                     <i class="fas fa-users"></i>
                                 </div>
                                 <div class="stats-box-text ml-4">
-                                    <h1  class="numbering data text-center">200</h1>
+                                    <h1 class="numbering data text-center">200</h1>
                                     <h5 class="text-center">عميل</h5>
                                 </div>
                             </div>
@@ -433,7 +436,7 @@
                                     <i class="fa-solid fa-bullhorn"></i>
                                 </div>
                                 <div class="stats-box-text ml-4">
-                                    <h1  class="numbering data text-center">1000</h1>
+                                    <h1 class="numbering data text-center">1000</h1>
                                     <h5 class="text-center">حملات تسويقية</h5>
                                 </div>
                             </div>
@@ -445,12 +448,12 @@
                                     <i class="fas fa-check"></i>
                                 </div>
                                 <div class="stats-box-text ml-4">
-                                    <h1  class="numbering data text-center">300</h1>
+                                    <h1 class="numbering data text-center">300</h1>
                                     <p class="text-center">مشروع</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -463,7 +466,7 @@
 
     </section>
 
-     <section id="team" class="team">
+    <section id="team" class="team">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-6 text-right">
@@ -489,7 +492,7 @@
                                     <img src="digital-marketing/img/shape-team.png" alt="img">
                                     <h3 class="name mb-0">Valliys</h3>
                                 </div>
-                                <p class="sub-heading mb-0 mt-1 text-center text-black">Director</p>
+                                <!-- <p class="sub-heading mb-0 mt-1 text-center text-black">Director</p> -->
                                 <div class="social-icons text-center">
                                     <a href="#"><i class="fab fa-facebook-f fb"></i></a>
                                     <a href="#"><i class="fab fa-twitter twt"></i></a>
@@ -506,7 +509,7 @@
                                     <img src="digital-marketing/img/shape-team.png" alt="img">
                                     <h3 class="name mb-0">Valliys</h3>
                                 </div>
-                                <p class="sub-heading mb-0 mt-1 text-center text-black">Director</p>
+                                <!-- <p class="sub-heading mb-0 mt-1 text-center text-black">Director</p> -->
                                 <div class="social-icons text-center">
                                     <a href="#"><i class="fab fa-facebook-f fb"></i></a>
                                     <a href="#"><i class="fab fa-twitter twt"></i></a>
@@ -527,7 +530,7 @@
             <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#fceeee"
                 transform="rotate(-45 310 100)" />
         </svg>
-    </section> 
+    </section>
 
     <section id="design" class="design">
 
@@ -536,7 +539,8 @@
                 <div class="home-text text-black">
                     <!-- <h1 class="sub-heading">Let us make you happy with</h1> -->
                     <h1 class="main-heading mt-3 mb-4 text-right"><span class="text-yellow ">من نحن</span> </h1>
-                    <h5 class=" mb-3">"نصنع معك البداية" فاليس شركة رائدة في تقديم خدمات التسويق الرقمي لعملائها من الشركات والمؤسسات.</h5>
+                    <h5 class=" mb-3">"نصنع معك البداية" فاليس شركة رائدة في تقديم خدمات التسويق الرقمي لعملائها من
+                        الشركات والمؤسسات.</h5>
                     <a href="./about-us.html" class="btn btn-main pink-btn rounded-pill mt-3">المزيد</a>
                 </div>
             </div>
@@ -656,7 +660,7 @@
             <h1 class="main-heading text-center text-yellow">أبرز عملائنا</h1>
             <div class="row  d-flex justify-content-center">
 
-                <div class="col-12 col-md-12 col-lg-12">
+                <div class="col-12 col-md-12 col-lg-12 ">
                     <div class="sponser-tags owl-carousel owl-theme " id="testimonial-carousal">
                         <div class="item brand-img d-flex justify-content-center">
                             <img src="digital-marketing/img/valliys-08.png" alt="brand1">
@@ -676,7 +680,7 @@
         </div>
 
         <svg class="right-square test" viewBox="0 0 312 600" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#fceeee"
+            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75"
                 transform="rotate(-45 310 100)" />
         </svg>
 
@@ -690,86 +694,36 @@
     <section id="blog" class="blog">
         <div class="container">
             <div class="row m-0">
-                <div class="col-lg-6 offset-lg-4 col-md-12 offset-md-0 col-sm-12 text-left p-0">
-                    <div class="home-text text-black text-right">
-                        <h1 class="main-heading mt-3 mb-4 text-yellow">مقالات</h1>
-                        <p class="sub-heading mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
-                            tempor incididunt ut aliq. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</p>
+                <div class="col-lg-8 offset-lg-4 col-md-12 offset-md-0 col-sm-12 text-left p-0">
+                    <div class="home-text text-black text-center">
+                        <h1 class="main-heading mt-3 mb-4 text-yellow">فريقنا</h1>
+                        <h5>
+                            الإبداع كان هو معيارنا الأول في انتقاء عناصر فريق ڤاليس، وذلك نبعاً من إيماننا أن التميز لا يتحقق سوى بفريق على قدر عالِ من الإبداع والسعي الدائم نحو الابتكار والخروج عن المألوف، وهو ما نجحنا في تحقيقه من خلال جمع مجموعة من خبراء التسويق المحليين والعالميين من ذوي الخبرة والكفاءة والقدرة على الإبداع الدائم، ونسعى معا للوصول لأعلى النتائج بأدق معايير المهنية   
+                                                
+                        </h5>
+                    
                     </div>
+                    <a href="./contact-us.html" class="btn btn-main pink-btn rounded-pill mt-3">أنضم إلينا</a>  
                 </div>
             </div>
-            <div class="row mt-40">
-                <div class="col-lg-8 offset-lg-4 col-md-12 offset-md-0 p-0">
-                    <div class="blog-owl owl-carousel owl-theme no-gutters blog-area" id="blog-carousal">
+            <div class="mt-40 row text-right">
 
-                        <div class="item blog-item">
-                            <div class="blog-img">
-                                <a href="digital-marketing/standalone.html">
-                                    <img src="digital-marketing/img/valliys-08.png" alt="blog img"></a>
-                            </div>
-
-                            <div class="blog-text text-center text-md-left">
-                                <div class="date mb-2">
-                                    <p class="text-red">May27, 2020</p>
-                                </div>
-                                <div class="info-blog">
-                                    <a href="digital-marketing/standalone.html">
-                                        <h4>Web design is fun</h4>
-                                    </a>
-                                </div>
-                                <div class="blog-description mb-3">
-                                    <p class="sub-heading">Lorem ipsum dolor sit amet, consadipi. Ut enim adipiscing
-                                        elit, sed do tempor.</p>
-                                </div>
-                                <!-- <div class="writer d-flex">
-                                    <div class="writer-img">
-                                        <img src="digital-marketing/img/blog1-writer.jpg" alt="img">
-                                    </div>
-                                    <p class="writer-name font-italic ml-3">David Villas</p>
-                                </div> -->
-                            </div>
-                        </div>
-
-                        <div class="item blog-item">
-                            <div class="blog-img">
-                                <a href="digital-marketing/standalone.html">
-                                    <img src="digital-marketing/img/valliys-08.png" alt="blog img"></a>
-                            </div>
-
-                            <div class="blog-text text-center text-md-left">
-                                <div class="date mb-2">
-                                    <p class="text-red">June14, 2020</p>
-                                </div>
-                                <div class="info-blog">
-                                    <a href="digital-marketing/standalone.html">
-                                        <h4>Future of websites</h4>
-                                    </a>
-                                </div>
-                                <div class="blog-description mb-3">
-                                    <p class="sub-heading">Lorem ipsum dolor sit amet, consadipi. Ut enim adipiscing
-                                        elit, sed do tempor.</p>
-                                </div>
-                                <!-- <div class="writer d-flex">
-                                    <div class="writer-img">
-                                        <img src="digital-marketing/img/blog2-writer.jpg" alt="img">
-                                    </div>
-                                    <p class="writer-name font-italic ml-3">Lisa Jhonson</p>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 ">
+         
                 </div>
+
+
+
             </div>
         </div>
 
         <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75"
+            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#fceeee"
                 transform="rotate(135 100 245)" />
         </svg>
 
         <svg class="right-square small-blog small-view" viewBox="0 0 312 600" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75"
+            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#fceeee"
                 transform="rotate(-45 310 100)" />
         </svg>
 
@@ -785,7 +739,8 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <form class="contact-form" id="ajaxForm" method="POST" action="https://getform.io/f/d9545fd2-a32c-4dc5-8cbc-d8a5f74cac57">
+                    <form class="contact-form" id="ajaxForm" method="POST"
+                        action="https://getform.io/f/d9545fd2-a32c-4dc5-8cbc-d8a5f74cac57">
                         <div class="row mt-5">
                             <div class="col-sm-12" id="result"></div>
                         </div>
@@ -815,8 +770,8 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-slider pink-btn rounded-pill w-100 contact_btn"
-                            id=""><i class="fa fa-spinner fa-spin mr-2 d-none" ></i>
+                        <button type="submit" class="btn btn-slider pink-btn rounded-pill w-100 contact_btn" id=""><i
+                                class="fa fa-spinner fa-spin mr-2 d-none"></i>
                             <b>إرسال الرسالة</b></button>
                         <h4 id="result"></h4>
                     </form>
@@ -829,27 +784,33 @@
                             <i class="fas fa-map-marker-alt address-icon mr-3"></i>
                             <p>123 Pak Avenue, New York,<br> United States</p>
                         </div> -->
-                        <h4 class="pb-2" >بيانات التواصل</h4>
+                        <h4 class="pb-2">بيانات التواصل</h4>
 
 
                         <div class="address d-flex mb-4 ">
-                            
+
                             <i class="fas fa-phone-volume address-icon mr-3"></i>
-                            <a  href="tel:+566831832"> <p>566831832 <span class="ml-3"></span> </p></a>
-                           
+                            <a href="tel:+566831832">
+                                <p>566831832 <span class="ml-3"></span> </p>
+                            </a>
+
                         </div>
                         <div class="address d-flex mr-3">
                             <i class="fas fa-paper-plane address-icon mr-3"></i>
-                            <a href="mailto:valliys.agancy@gmail.com"><p> valliys.agancy@gmail.com </p></a>
-                            
+                            <a href="mailto:valliys.agancy@gmail.com">
+                                <p> valliys.agancy@gmail.com </p>
+                            </a>
+
                         </div>
                         <div class="address d-flex  mt-4">
                             <i class="fa-brands fa-whatsapp address-icon mr-3"></i>
-                            <a href=""><p> 566831832 </p></a>
-                            
+                            <a href="">
+                                <p> 566831832 </p>
+                            </a>
+
                         </div>
                     </div>
-<!-- 
+                    <!-- 
                     <div class="plant1">
                         <div class="plant-contact">
                             <img src="digital-marketing/img/contact-plant.png" alt="img">
@@ -888,7 +849,7 @@
 
         </div>
         <svg class="right-square contact-square" viewBox="0 0 150 390" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="32" width="1616" height="1616" rx="18" ry="18" fill="#fceeee"
+            <rect x="0" y="32" width="1616" height="1616" rx="18" ry="18" fill="#5d3b75"
                 transform="rotate(-45 310 100)" />
         </svg>
     </section>
@@ -944,9 +905,9 @@
                     <!--Grid column-->
 
                     <!--Grid column-->
-           
+
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-center mt-5  justify-content-center">
-                        
+
                         <ul class="footer_ul mb-50">
                             <a href="https://www.facebook.com/valliysofficial">
                                 <li class="footer_list "><i class="lab la-facebook-f fb "></i></li>
@@ -1023,64 +984,124 @@
                 .catch(error => console.log(error))
         }
     </script> -->
- 
-    <script src="vendor/js/bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyCO34YMDe_17kdaXk1rmEJMjRV33mL_3Ek",
+            authDomain: "valliys.firebaseapp.com",
+            databaseURL: "https://valliys-default-rtdb.firebaseio.com",
+            projectId: "valliys",
+            storageBucket: "valliys.appspot.com",
+            messagingSenderId: "440689896549",
+            appId: "1:440689896549:web:1c7cb8aeb298633d57ea8c",
+            measurementId: "G-DTG8HYXKQK"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        var messagesRef = firebase.database()
+            .ref('News');
+        console.log(messagesRef);
+        let arr = [];
+
+        messagesRef.once("value", (snapshot) => {
+            snapshot.forEach((element) => {
+                console.log(element.val());
+                arr.push(element.val());
+                console.log(arr);
+
+            })
+            arr.map(e => {
+
+
+
+                document.querySelector(".myblog").innerHTML += `
+                <div id="team-carousal"  mt-100 text-center">
+                        <div class="item">
+                            <div class="team-img">
+                                <img class="w-100" src="${e.thePhotoNews}" alt="img">
+                            </div>
+                            <div class="team-tittle text-left mt-3 mb-3">
+                                <div class="name-img">
+                                    <img src="digital-marketing/img/shape-team.png" alt="img">
+                                    <h4>${e.nameNews}</h4>
+                                </div>
+                                <p class="sub-heading mb-0 mt-1 text-center text-black">Director</p>
+                                <div class="social-icons text-center">
+                                    <a href="#"><i class="fab fa-facebook-f fb"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twt"></i></a>
+                                    <a href="#"><i class="fab fa-instagram drb"></i></a>
+                                </div>
+                            </div>
+                        </div>
+         
+                    </div>
+
+   
+        `
+
+
+            })
+
+            $(function () {
+                $('.hello').owlCarousel({
+                    
+                });
+            });
+
+
+        })
+
+
+        function getPage(id) {
+            window.location.href = "/news/index.html?id=" + id;
+
+        }
+
+
+
+
+    </script>
+
+
 
     <!-- Plugin Js -->
 
-    <script src="vendor/js/owl.carousel.min.js"></script>
+    <script src="vendor/js/bundle.min.js"></script>
     <script src="vendor/js/jquery.cubeportfolio.min.js"></script>
     <script src="vendor/js/parallaxie.min.js"></script>
 
     <!-- custom script -->
     <script src="digital-marketing/js/jquery.fancybox.js"></script>
     <script src="digital-marketing/js/jquery.fancybox.min.js"></script>
-    <script src="vendor/js/owl.carousel.min.js"></script>
+    <script src="./vendor/js/owl.carousel.min.js"></script>
+    <script src="./digital-marketing/slick-1.8.1/slick/slick.min.js"></script>
     <script src="digital-marketing/js/mediaelement-and-player.min.js"></script>
     <script src="digital-marketing/js/tilt.jquery.js"></script>
     <script src="vendor/js/contact_us.js"></script>
     <script src="digital-marketing/js/script.js"></script>
     <!-- <script src="./digital-marketing/js/jquery.js"></script> -->
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-    
+
     <script>
-const items = document.querySelectorAll(".data");
+        const items = document.querySelectorAll(".data");
 
-gsap.from(items, {
-  textContent: 0,
-  duration: 7,
-  ease: Power1.easeIn,
-  snap: { textContent: 1 },
-//   stagger: 1,
-  // onUpdate: textContent.replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-});
+        gsap.from(items, {
+            textContent: 0,
+            duration: 7,
+            ease: Power1.easeIn,
+            snap: { textContent: 1 },
+            //   stagger: 1,
+            // onUpdate: textContent.replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+        });
 
 
-    // $("#ajaxForm").submit(function(e){
-    //     e.preventDefault();
-    //     var action = $(this).attr("action");
-    //     $.ajax({
-    //     type: "POST",
-    //     url: action,
-    //     crossDomain: true,
-    //     data: new FormData(this),
-    //     dataType: "json",
-    //     processData: false,
-    //     contentType: false,
-    //     headers: {
-    //     "Accept": "application/json"
-    //     }
-    // }).done(function() {
-    //     alert('The form was submitted successfully.')
-    // }).fail(function() {
-    //     alert('An error occurred! Please try again later.')
-    // });
-    // });
 
 
     </script>
 
-    
+
+
 </body>
 
 </html>

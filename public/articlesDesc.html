@@ -174,38 +174,18 @@
 
     </header>
 
+    <div class="col-md-12">
+        <div class="articals">
 
-    <section dir="rtl" id="blog" class="blog">
-        <div class="container">
-            <div class="d-flex m-0">
-                <div class="col-lg-6 offset-lg-4 col-md-12 offset-md-0 col-sm-12 text-left p-0">
-                    <div class="home-text text-black text-right">
-                        <h1 class="main-heading mt-3 mb-4 textPurple">مقالات</h1>
-                        <!-- <p class="sub-heading mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
-                            tempor incididunt ut aliq. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</p> -->
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row flex-wrap-reverse">
-
-
-            </div>
         </div>
+    </div>
 
 
-        <!-- <svg class="right-square small-blog small-view" viewBox="0 0 312 600" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75"
-                transform="rotate(-45 310 100)" />
-        </svg> -->
 
-    </section>
 
-    <!-- <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
+    <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75" transform="rotate(135 100 245)" />
-    </svg> -->
+    </svg>
 
 
 
@@ -333,7 +313,7 @@
     <script src="digital-marketing/js/script.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script>
-     let id = window.location.search;
+        let id = window.location.search;
         id = parseInt(id.substring(4))
 
 
@@ -356,29 +336,22 @@
 
         messagesRef.once("value", (snapshot) => {
             snapshot.forEach((element) => {
-                console.log(element.val());
-                arr.push(element.val());
-                console.log(arr);
+                let valId = parseInt(element.val().id)
+                valId === id ? arr.push(element.val()) : console.log("welcome");
 
             })
             arr.map(e => {
 
 
 
-                document.querySelector(".row").innerHTML += `
-                <div class=" col-lg-4 col-md-4">
-                <div class="item blog-item ">
-    <div class="blog-img >
-        <a onclick="getPage('${e.id}')">
-            <img class="w-100" src="${e.thePhotoNews}" alt="blog "></a>
+                document.querySelector(".articals").innerHTML += `
+            
+    <div class="d-flex justify-content-center" >
+            <img class="w-50" src="${e.thePhotoNews}" alt="blog img"></a>
     </div>
-
     <div class="blog-text text-center ">
-
-        <div class="info-blog">
-            <a onclick="getPage('${e.id}')">
-                <h4>${e.nameNews}</h4>
-            </a>
+        <div class="text-bold">
+                <h2>${e.nameNews}</h2>
         </div>
         <div class="blog-description mb-3">
             <p class="sub-heading">${e.textBox}</p>
@@ -394,14 +367,14 @@
 
         })
 
+
         function getPage(id) {
             window.location.href = "articlesDesc.html?id=" + id;
 
         }
 
-    </script>
-    <script>
-        
+
+
     </script>
 
 </body>

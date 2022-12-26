@@ -4,7 +4,7 @@ jQuery(window).on("load", function() {
     /*  ===================================
         Loading Timeout
      ====================================== */
-    $(".loader-area").fadeOut(1000);
+    $(".loader-area").fadeOut(2300);
 
 });
 
