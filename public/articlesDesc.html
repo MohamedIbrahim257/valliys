@@ -58,6 +58,22 @@
 
         gtag('config', 'G-DTG8HYXKQK');
     </script>
+        	<style>
+                .sidebar {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 200px;
+                    height: 100%;
+                    background-color: #f1f1f1;
+                    padding: 20px;
+                }
+                .btn-whatsapp {
+                    background-color: #25d366;
+                    color: #fff;
+                    border: none;
+                }
+            </style>
 </head>
 <header class='masthead'>
     <p class='masthead-intro'> </p>
@@ -174,8 +190,13 @@
 
     </header>
 
-    <div class="col-md-12">
+    <div style="background-color:#5d3b75;" class="top-0  end-0 start-0 p-2 text-center text-white ">
+        <h1>مقالات</h1>
+    </div>
+
+    <div class="">
         <div class="articals">
+
 
         </div>
     </div>
@@ -183,9 +204,9 @@
 
 
 
-    <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
+    <!-- <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75" transform="rotate(135 100 245)" />
-    </svg>
+    </svg> -->
 
 
 
@@ -345,7 +366,14 @@
 
 
                 document.querySelector(".articals").innerHTML += `
-            
+
+     <nav dir="rtl" class="mb-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
+            <li class="breadcrumb-item"><a href="./articles.html">مقالات</a></li>
+            <li class="breadcrumb-item active" aria-current="page">${e.nameNews}</li>
+        </ol>
+    </nav>
     <div class="d-flex justify-content-center" >
             <img class="w-50" src="${e.thePhotoNews}" alt="blog img"></a>
     </div>

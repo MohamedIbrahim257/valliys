@@ -117,13 +117,13 @@ $('.sponser-tags').owlCarousel({
 
     loop: true,
     margin: 20,
-    slideSpeed: 3000,
+    slideSpeed: 2000,
     slideTransition: 'linear',
     nav: false,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 10000,
-    autoplayHoverPause: true,
+    // autoplayTimeout: 10000,
+    // autoplayHoverPause: true,
     responsive: {
         0: {
             items: 2

@@ -1295,7 +1295,15 @@ svg.right-square.team {
 
 .info-blog a {
     color: #202020;
+    cursor: pointer;
+    transition: all;
 }
+
+.info-blog :hover{
+    color: #5d3b75;
+}
+
+
 
 .info-blog h4 {
     font-size: 24px;

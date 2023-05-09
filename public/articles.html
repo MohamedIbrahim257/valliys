@@ -12,7 +12,7 @@
     <!-- keywords -->
     <meta name="keywords" content="">
     <!-- Page Title -->
-    <title>Articles-Valliys</title>
+    <title>مقالات - Valliys</title>
     <!-- Favicon -->
 
     <link rel="icon" href="./digital-marketing/img/WhatsApp Image 2022-09-05 at 4.24.58 PM.jpeg">
@@ -58,6 +58,7 @@
 
         gtag('config', 'G-DTG8HYXKQK');
     </script>
+
 </head>
 <header class='masthead'>
     <p class='masthead-intro'> </p>
@@ -173,10 +174,26 @@
         <a id="close_side_menu" href="javascript:void(0);"></a>
 
     </header>
+    <div style="background-color:#5d3b75;" class="top-0 end-0 start-0 p-2  text-center text-white fa-2xl  ">
+        <h1>مقالات</h1>
+    </div>
+    <nav dir="rtl" class="mb-5"
+        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
+            <li class="breadcrumb-item active" aria-current="page">مقالات</li>
+        </ol>
+    </nav>
+    <div class="col-md-12">
+        <div class="articals">
 
+        </div>
+    </div>
 
-    <section dir="rtl" id="blog" class="blog">
+    <section dir="rtl" id="blog" class="">
         <div class="container">
+
             <div class="d-flex m-0">
                 <div class="col-lg-6 offset-lg-4 col-md-12 offset-md-0 col-sm-12 text-left p-0">
                     <div class="home-text text-black text-right">
@@ -333,7 +350,7 @@
     <script src="digital-marketing/js/script.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script>
-     let id = window.location.search;
+        let id = window.location.search;
         id = parseInt(id.substring(4))
 
 
@@ -377,11 +394,8 @@
 
         <div class="info-blog">
             <a onclick="getPage('${e.id}')">
-                <h4>${e.nameNews}</h4>
+                <h2>${e.nameNews}</h2>
             </a>
-        </div>
-        <div class="blog-description mb-3">
-            <p class="sub-heading">${e.textBox}</p>
         </div>
     </div>
 </div>
@@ -401,7 +415,7 @@
 
     </script>
     <script>
-        
+
     </script>
 
 </body>

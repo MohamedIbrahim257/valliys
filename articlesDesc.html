@@ -12,7 +12,7 @@
     <!-- keywords -->
     <meta name="keywords" content="">
     <!-- Page Title -->
-    <title>Articles-Valliys</title>
+    <title>مقالات - Valliys</title>
     <!-- Favicon -->
 
     <link rel="icon" href="./digital-marketing/img/WhatsApp Image 2022-09-05 at 4.24.58 PM.jpeg">
@@ -102,7 +102,7 @@
                                         <a class="nav-link font-weight-bold " href="./articles.html">مقالات</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link font-weight-bold " href="#gallery">الاعمال السابقة</a>
+                                        <a class="nav-link font-weight-bold " href="./ourProjects.html">الاعمال السابقة</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link font-weight-bold " href="./about-us.html">من نحن</a>
@@ -149,7 +149,7 @@
                             <a class="nav-link scroll" href="./about-us.html">من نحن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#gallery">الاعمال السابقة</a>
+                            <a class="nav-link scroll" href="./ourProjects.html">الاعمال السابقة</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="./articles.html">مقالات</a>
@@ -174,7 +174,12 @@
 
     </header>
 
-    <div class="col-md-12">
+    <div style="background-color:#5d3b75;" class="top-0  end-0 start-0 p-2 text-center text-white ">
+        <h1>مقالات</h1>
+    </div>
+
+
+    <div class="">
         <div class="articals">
 
         </div>
@@ -183,9 +188,9 @@
 
 
 
-    <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
+    <!-- <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75" transform="rotate(135 100 245)" />
-    </svg>
+    </svg> -->
 
 
 
@@ -227,7 +232,7 @@
                                 <a href="./about-us.html" class="text-foot">من نحن</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-foot">الأعمال السابقة</a>
+                                <a href="./ourProjects.html" class="text-foot">الأعمال السابقة</a>
                             </li>
                             <li>
                                 <a href="./articles.html" class="text-foot">مقالات</a>
@@ -330,7 +335,7 @@
 
         firebase.initializeApp(firebaseConfig);
         var messagesRef = firebase.database()
-            .ref('News');
+            .ref('NewsBlog');
         console.log(messagesRef);
         let arr = [];
 
@@ -345,16 +350,27 @@
 
 
                 document.querySelector(".articals").innerHTML += `
-            
+
+     <nav dir="rtl" class="mb-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
+            <li class="breadcrumb-item"><a href="./articles.html">مقالات</a></li>
+            <li class="breadcrumb-item active" aria-current="page">${e.nameNewsBlog}</li>
+        </ol>
+    </nav>
+    <div dir="rtl" class="p-5 text-right" >
+        <i class="fa-solid fa-tag  text-muted px-2">${e.nameNewsBlog}</i>
+        <i class="fa-solid fa-tag  text-muted px-2">${e.dateNewsBlog}</i>
+        </div>
     <div class="d-flex justify-content-center" >
-            <img class="w-50" src="${e.thePhotoNews}" alt="blog img"></a>
+            <img class="w-50" src="${e.thePhotoNewsBlog}" alt="blog img"></a>
     </div>
     <div class="blog-text text-center ">
-        <div class="text-bold">
-                <h2>${e.nameNews}</h2>
+        <div class="text-bold my-5">
+                <h2>${e.nameNewsBlog}</h2>
         </div>
         <div class="blog-description mb-3">
-            <p class="sub-heading">${e.textBox}</p>
+            <p class="sub-heading">${e.textBoxBlog}</p>
         </div>
     </div>
 </div>

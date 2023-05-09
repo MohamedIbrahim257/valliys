@@ -12,7 +12,7 @@
     <!-- keywords -->
     <meta name="keywords" content="">
     <!-- Page Title -->
-    <title>مقالات - Valliys</title>
+    <title>أعمالنا السابقه-Valliys</title>
     <!-- Favicon -->
 
     <link rel="icon" href="./digital-marketing/img/WhatsApp Image 2022-09-05 at 4.24.58 PM.jpeg">
@@ -46,6 +46,9 @@
     <link rel="stylesheet" href="digital-marketing/css/jquery.fancybox.css">
     <link rel="stylesheet" href="digital-marketing/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="digital-marketing/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./digital-marketing/slick/slick.css">
+    <link rel="stylesheet" href="./digital-marketing/slick/slick-theme.css">
+    <link rel="stylesheet" href="./digital-marketing/slick/slick-lightBox/slick-lightbox.css">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="./digital-marketing/css/style.css">
     <!-- Google tag (gtag.js) -->
@@ -102,7 +105,8 @@
                                         <a class="nav-link font-weight-bold " href="./articles.html">مقالات</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link font-weight-bold " href="./ourProjects.html">الاعمال السابقة</a>
+                                        <a class="nav-link font-weight-bold " href="./ourProjects.html">الاعمال
+                                            السابقة</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link font-weight-bold " href="./about-us.html">من نحن</a>
@@ -173,47 +177,21 @@
         <a id="close_side_menu" href="javascript:void(0);"></a>
 
     </header>
-    <div style="background-color:#5d3b75;" class="top-0 end-0 start-0 p-2  text-center text-white fa-2xl " ><h1>مقالات</h1></div>
-    <nav dir="rtl" class="mb-5" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
-          <li class="breadcrumb-item active" aria-current="page">مقالات</li>
-        </ol>
-      </nav>
-    <div class="col-md-12">
-        <div class="articals">
 
-        </div>
+    <div style="background-color:#5d3b75;" class="top-0  end-0 start-0 p-2 text-center text-white">
+        <h1>أعمالنا السابقه</h1>
     </div>
 
-    <section dir="rtl" id="blog" class="">
-        <div class="container">
-            
-            <div class="d-flex m-0">
-                <div class="col-lg-6 offset-lg-4 col-md-12 offset-md-0 col-sm-12 text-left p-0">
-                    <div class="home-text text-black text-right">
-                        <h1 class="main-heading mt-3 mb-4 textPurple">مقالات</h1>
-                        <!-- <p class="sub-heading mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
-                            tempor incididunt ut aliq. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</p> -->
-                    </div>
-                </div>
 
-            </div>
+    <div class="">
+        <div class="projects ">
 
-            <div class="row flex-wrap-reverse">
-
-
-            </div>
         </div>
+        <div dir="ltr" class="prop-box home-project"></div>
+    </div>
 
 
-        <!-- <svg class="right-square small-blog small-view" viewBox="0 0 312 600" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75"
-                transform="rotate(-45 310 100)" />
-        </svg> -->
 
-    </section>
 
     <!-- <svg class="left-square blog" viewBox="0 0 310 655" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="32" width="1616" height="1616" rx="48" ry="48" fill="#5d3b75" transform="rotate(135 100 245)" />
@@ -329,7 +307,8 @@
     <script src="vendor/js/bundle.min.js"></script>
 
     <!-- Plugin Js -->
-    <script src="./digital-marketing/slick-1.8.1/slick/slick.js"></script>
+    <script src="./digital-marketing/slick/slick.js"></script>
+    <script src="./digital-marketing/slick/slick-lightBox/slick-lightbox.js"></script>
     <script src="./digital-marketing/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
     <script src="vendor/js/owl.carousel.min.js"></script>
     <script src="vendor/js/jquery.cubeportfolio.min.js"></script>
@@ -345,7 +324,7 @@
     <script src="digital-marketing/js/script.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script>
-     let id = window.location.search;
+        let id = window.location.search;
         id = parseInt(id.substring(4))
 
 
@@ -362,49 +341,129 @@
 
         firebase.initializeApp(firebaseConfig);
         var messagesRef = firebase.database()
-            .ref('NewsBlog');
+            .ref('News');
+        console.log(messagesRef);
         let arr = [];
 
         messagesRef.once("value", (snapshot) => {
             snapshot.forEach((element) => {
-                arr.push(element.val());
+                let valId = parseInt(element.val().id)
+                valId === id ? arr.push(element.val()) : console.log("welcome");
 
             })
             arr.map(e => {
 
 
 
-                document.querySelector(".row").innerHTML += `
-                <div class=" col-lg-4 col-md-4">
-                <div class="item blog-item ">
+                document.querySelector(".prop-box").innerHTML += `
 
+     <nav dir="rtl" class="mb-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
+            <li class="breadcrumb-item"><a href="./ourProjects.html">أعمالنا السابقه</a></li>
+            <li class="breadcrumb-item active" aria-current="page">${e.nameNews}</li>
+        </ol>
+    </nav>
     <div class="blog-text text-center ">
+        <div class="text-bold">
+                <h1>${e.nameNews}</h1>
+        </div>
 
-        <div class="info-blog">
-            <a onclick="getPage('${e.id}')">
-                <img class="w-100 py-3" src="${e.thePhotoNewsBlog}" alt="blog">
-                <h4>${e.nameNewsBlog}</h4>
-            </a>
+    </div>
+    <div class="container-fluid">
+     
+        <div class="row" >
+            <div class="col-md-6 d-flex align-items-center  justify-content-center" >
+                
+        <div class="blog-description mb-3 ">
+            <h1 class="text-center py-4" style="color:#5D3A75" >تفاصيل عن العمل</h1>
+            <p class="sub-heading text-center">${e.textBox}</p>
         </div>
     </div>
+      <div class="col-md-6">
+        <div class="d-flex justify-content-center" >
+            <img class="w-50" src="${e.thePhotoNews}" alt="blog img"></a>
+         </div>
+     </div>
+
+    </div>
+
+    <div class="container my-5" >
+        <h1 class="text-right py-4" style="color:#5D3A75" >معرض الصور</h1>
+        <div class="project-gallery"></div>
+        </div>
+   
+
 </div>
 </div>
 
 	 `
 
+                let z = document.querySelector(".project-gallery");
+
+                if (!e.photo) {
+                    console.log("Sorry , but this project have no images !");
+                } else {
+                    for (let i = 0; i < e.photo.length; i++) {
+
+                        let input = document.createElement("img");
+
+                        input.classList.add("w-100")
+                        input.style = "padding:5px"
+                        input.src = e.photo[i].url;
+                        z.appendChild(input);
+
+                    }
+                }
+
             })
 
+            $('.project-gallery').each(function () {
+                var slider = $(this);
+                slider.slick({
+                    arrows: true,
+                    // dots: true,
+                    accessibility: false,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    slidesToShow: 3,
+                    //    variableWidth: true,
+                    //     variableHeight: true,
+                    slidesToScroll: 1,
+                    responsive: [{
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    ]
+                });
+                var sLightbox = $(this);
+                sLightbox.slickLightbox({
+                    src: 'src',
+                    itemSelector: 'img'
+                });
 
+            });
         })
 
+
         function getPage(id) {
-            window.location.href = "articlesDesc.html?id=" + id;
+            window.location.href = "projects.html?id=" + id;
 
         }
 
-    </script>
-    <script>
-        
+
+
     </script>
 
 </body>
